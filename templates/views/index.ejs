@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+    <title>CollegeVerse</title>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <%- include ("../partials/header.ejs") -%>
+    <!-- Home-Page -->
+    <section class="container home flex">
+      <div class="home-left">
+        <h3 class="home-heading">Welcome To CollegeVerse</h3>
+        <p class="home-passage">
+          CollegeVerse has been the one-stop solution for students the night before exam.
+        </p>
+          <div class="button flex" id="hide-button">
+            <% if(isAuthenticated){ %>
+              <a href="/Logout" class="nav-button primary-button" id="SignIn">Log Out</a>
+           <% }else{ %>
+              <a href="/SignIn" class="nav-button primary-button" id="SignIn">Sign In</a>
+              <a href="/Signup" class="nav-button second-button">Sign Up</a>
+           <% }%>
+          </div>
+      </div>
+      <div class="home-right flex">
+        <img src="images/homd.jpg" alt="" />
+      </div>
+    </section>
+    <!-- Department Section -->
+    <section class="department flex container">
+      <p class="heading">One PlatForm For All Department</p>
+      <a href="/resources" class="nav-button second-button" id="Dept-explore">Explore Resources</a>
+      <div class="features flex">
+        <div class="feature-card flex">
+          <img src="images/4380.jpg" alt="" />
+          <span>Bachelor of Business Administration</span>
+          <p>
+            The Bachelor of Business Administration course nurtures the inner managerial skills and prepares students to take up business challenges and tackle the same effectively.
+          </p>
+          <a href="/bba" class="nav-button second-button"
+            >Explore</a
+          >
+        </div>
+        <div class="feature-card flex">
+          <img src="images/res-bca.jpg" alt="" />
+          <span>Bachelors's in Computer Application</span>
+          <p>
+            Candidates interested in taking up Information Technology or IT as their career path can opt for this bachelor's degree programme
+          </p>
+          <a href="/bca" class="nav-button second-button"
+            >Explore</a
+          >
+        </div>
+        <div class="feature-card flex">
+          <img src="images/19834.jpg" alt="" />
+          <span class="last">
+            Bachelor of Business Administration in Hospital Management
+          </span>
+          <p>
+            We train our students to work in sectors like human resources, medical records management, financial management.
+          </p>
+          <a href="/bhm" class="nav-button second-button"
+            >Explore</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- About Section -->
+    <section class="about-color">
+      <div class="container about">
+      <div class="about-left">
+        <img src="images/aboutus.jpg" alt="" />
+      </div>
+      <div class="about-right">
+        <p class="about-right-top">About Us</p>
+        <p>
+          CollegeSpace, the Socio-Academic Portal of BCREC-APC, is the most
+          frequently visited website of BCREC-APC. We aim to make the life of
+          every BCRECian simpler & turn these three years into a smoother ride!
+        </p>
+        <div class="about-button">
+          <a href="/aboutus" class="second-button">Explore</a>
+        </div>
+      </div>
+    </div>
+    </section>
+    <!-- Sub Footer -->
+    <%- include ("../partials/footer.ejs") -%>
+    <script
+      src="https://kit.fontawesome.com/0377ad9788.js"
+      crossorigin="anonymous"
+    ></script>
+
+  </body>
+</html>

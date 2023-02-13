@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUP</title>
+    <link rel="stylesheet" href="CSS/signin.css">
+</head>
+<body>
+    <div class="signin">
+        <div class="close">
+            <a href="/">
+            <span class="close-bar"></span>
+            <span class="close-bar"></span>
+            <span class="close-bar"></span>
+            </a>
+        </div>
+    <div class="left-side">
+        <img src="images/SignUp.jpg" alt="">
+    </div>
+    <div class="right-side">           
+        <form action="/Signup" class="form-element"  method="POST">
+            <div class="top-form">
+                <h3>Sign Up</h3>
+                <p>Hey Enter Your Details to create your Account</p>
+            </div>
+            <div class="midlle-form">
+                <div class="form-div">
+                    <input type="text" class="form-control" id="name" placeholder="Enter Your Name" name="fullname">
+                </div>
+                <div class="form-div">
+                    <input type="email" class="form-control" id="email" placeholder="Enter Your Email" name="username">
+                </div>
+                <div class="form-div">
+                    <input type="password" class="form-control" id="password" placeholder="Create Password" name="password">
+                </div>
+                <div class="form-div">
+                    <input type="password" class="form-control" id="confirmpassword" placeholder="confirm Your Password" name="confirmpassword">
+                </div>
+            </div>
+            <div class="lower-form" id="low">
+                    <input type="submit" class="button" value="Register">
+                <a href="/SignIn" id="signup">Already Have an Account? Sign In</a>
+                <% if(typeof alert != 'undefined') { %>
+                    <% alert.forEach(function(error){ %> 
+                        <div class="alert" >
+                            *<%= error.msg %>
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">X</button>
+                          </div>
+                <% }) %>
+            <% } %>
+            </div>
+        </form>
+
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+</body>
+</html>

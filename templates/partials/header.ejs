@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include ("../partials/headerlinks.ejs") -%>
+</head>
+<body>
+     <nav>
+      <div class="flex navbar container">
+        <div class="logo">
+          <a href="#">CollegeVerse</a>
+        </div>
+        <div class="nav-items" id="nav-links">
+          <ul class="flex nav-ul">
+            <li class="nav-link"><a href="/">Home</a></li>
+            <li class="nav-link"><a href="/aboutus">About Us</a></li>
+            <li class="nav-link"><a href="/resources">Resources</a></li>
+          </ul>
+        </div>
+        <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+      </div>
+       <script>
+      const hamburger = document.querySelector(".hamburger");
+      var navlinks = document.getElementById('nav-links');
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navlinks.classList.toggle("active");
+      });
+    </script>
+    </nav> 
+            
+</body>
+</html>

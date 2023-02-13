@@ -1,0 +1,232 @@
+@media screen and (max-width:991px){
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-toggle{
+        display: block;
+        margin-right: 20px;
+    }
+    .navbar{
+        overflow: initial;
+    }
+    .nav-items{
+        position: fixed;
+        background-color: var(--primary-text-color);
+        left: 0;
+        top: -100%;
+        width: 100%;
+        padding-block: 20px;
+        transition: 0.2s ease-in-out;
+    }
+    .nav-items.active{
+        top: 50px;
+    }
+    .nav-ul{
+        flex-direction: column;
+    }
+    .nav-button{
+        width: 100%;
+        padding: 12px 24px;
+        text-align: center;
+    }
+}
+/* 767 */
+@media screen and (max-width:810px) {
+    .home{
+        flex-direction: column-reverse;
+    }
+    .home-left{
+        width: 100%;
+        text-align: center;
+        /* align-items: center; */
+        justify-content: center;
+        margin-top: 40px;
+        padding-inline: auto;
+        padding-right: 0px;
+    }
+    .logo{
+        margin-left: 20px;
+    }
+    .home-heading{
+        font-size: 40px;
+        text-align: center;
+    }
+    .home-passage{
+        font-size: 16px;
+        text-align: center;
+    }
+    .button{
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .nav-button{
+        width: 30%;
+    }
+    .department{
+        margin-top: 40px;
+    }
+    .nav-button:nth-child(3){
+        width: 100%;
+    }
+    #Dept-explore{
+        width: 50%;
+    }
+    .features{
+        gap: 20px;
+    }
+    .feature-card{
+        width: 40%;
+    }
+    .feature-card:nth-child(3){
+        width: 100%;
+    }
+    .explore-button{
+        width: 40%;
+    }
+
+    /* About */
+
+    .about{
+        flex-direction: column;
+    }
+    .about-left{
+        width: 100%;
+    }
+    .about-right{
+        width: 100%;
+    }
+    .about-right h2{
+        font-size: 40px;
+    }
+    .about-right p{
+        text-align: center;
+        font-size: 16px;
+        margin-top: 30px;
+    }
+    .about-button{
+        height: 60px;
+    }
+    /* Footer */
+    .footer-logo a{
+        font-size: 25px;
+    }
+    .footer-links h3{
+        font-size: 20px;
+    }
+    .footer-items{
+        font-size: 14px;
+    }
+    /* Sub Footer */
+    .email{
+        margin-left: 20px;
+    }
+    .sub-footer-logo{
+        display: inline;
+        width: 100%;
+        text-align: center;
+    }
+    .icons{
+        margin-right: 30px;
+    }
+}
+@media screen and (max-width:550px) {
+    .explore-button{
+        width: 100%;
+    }
+    .feature-card h2{
+        font-size: 18px;
+    }
+    .feature-card p{
+        font-size: 14px;
+    }
+    .footer{
+        padding-block: 40px;
+    }
+    .footer-main{
+
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-logo{
+        margin-left: 0px;
+        margin-bottom: 10px;
+    }
+    .footer-right{
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+    .footer-links:nth-child(2){
+        margin-right: 0px;
+    }
+
+    .sub-footer{
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        height: auto;
+        padding-top: 10px;
+    }
+    
+    .sub-footer-logo{
+        display: none;
+    }
+    .icons{
+        margin-left: 50px;
+        padding-bottom: 10px;
+    }
+   
+}
+/* 479 */
+@media screen and (max-width:479px){
+    :root{
+        --padding-inline-section: 10px;
+    }
+    .home-heading{
+        font-size: 35px;
+        /* text-align: center; */
+    }
+    .heading{
+        font-size: 30px;
+    }
+    .feature-card{
+        width: 100%;
+    }
+    .feature-card:nth-child(2){
+        margin-top: 20px;
+    }
+
+    .about-left{
+        display: none;
+    }
+    .about-right{
+        margin-top: 30px;
+    }
+
+    
+}
+
+@media screen and (max-width:420px){
+    .button{
+        flex-direction: column;
+
+    }
+    .primary-button{
+        width: 100%;
+    }
+    .second-button{
+        width: 100%;
+    }
+    #Dept-explore{
+        width: 100%;
+    }
+}

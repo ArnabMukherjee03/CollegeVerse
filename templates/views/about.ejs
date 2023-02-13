@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="CSS/about.css">
+</head>
+<body>
+  <%- include ("../partials/header.ejs") -%>
+     <!-- About Main -->
+     <section class="main-page">
+     <div class="bg-image"></div>
+     <div class="content">
+     <p>CollegeSpace, the Socio-Academic Portal of BCREC-APC, is the most frequently visited website of BCREC-APC. We aim to make the life of every BCRECian simpler & turn these three years into a smoother ride!</p>
+    </div>
+    <div class="button-div">
+      <a href="#About" class="about-page-button" >Explore</a>
+     </div>
+    </section>
+
+    <!--About Features-->
+    <section class="about-feature container" id="About">
+    <p class="sub-head">Community</p>
+    <p class="about-page-heading">Don't Learn Alone</p>
+    <div class="features about-card flex">
+        <div class="feature-card flex">
+            <img src="images/13038.jpg" alt="">
+            <h3>Prepare With Us</h3>
+            <p>Prepare for exam with Previous years questions and notes designed by us.</p>
+        </div>
+        <div class="feature-card  flex">
+            <img src="images/4792249.jpg" alt="">
+            <h3>Grow With Us</h3>
+            <p>Gain and share your knowledge & skills with a variety of learning platforms offered by CollegeVerse.</p>
+        </div>
+        <div class="feature-card  flex">
+            <img src="images/bca.jpg" alt="">
+            <h3>Learn With Us</h3>
+            <p>Learn about your subjects provide by CollegeVerse</p>
+        </div>
+    </div>
+    </section>
+    <%- include ("../partials/footer.ejs") -%>
+    <script
+      src="https://kit.fontawesome.com/0377ad9788.js"
+      crossorigin="anonymous"
+    ></script>
+</body>
+</html>

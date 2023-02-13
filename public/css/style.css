@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Aleo:wght@300&family=Arvo&family=EB+Garamond:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aleo:wght@300&family=Arvo&family=Caveat&family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-text-color: #5a5cbe;
+    --secondary-text-color: #737373;
+    --padding-inline-section: 20px;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Aleo', serif;
+    color: var(--secondary-text-color);
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+/* Utility class */
+.container{
+    max-width: 1180px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+    overflow: hidden;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+/* Navbar */
+nav{
+    background-color: var(--primary-text-color);
+}
+.navbar{
+    justify-content: space-between;
+    height: 62px;
+    position: relative;
+}
+.nav-items{
+    flex-basis: 730px;
+}
+.logo{
+    margin-left: 66px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.logo a{
+    font-family: 'EB Garamond', serif;
+    font-size: 22px;
+    color: white;
+    
+}
+.nav-ul{
+    gap: 59px;
+    justify-content: end;
+    font-size: 18px;
+}
+.nav-ul a{
+    color: white;
+}
+.nav-ul a:hover{
+    text-decoration: underline;
+}
+.nav-toggle{
+    display: none;
+}
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+
+/* Home Page */
+.home{
+    justify-content: space-evenly;
+    padding: 60px var(--padding-inline-section) 0;
+}
+.home-left{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding-right: 16px;
+}
+.home-heading{
+    font-size: 60px;
+    font-weight: 400;
+    font-family: 'EB Garamond', serif;
+    color: var(--primary-text-color);
+}
+
+.home-head1{
+    font-size: 50px;
+    color: #5a5cbe;
+    /* font-family: 'Caveat', cursive; */
+    font-family: 'EB Garamond', serif;
+}
+.home-head2{
+    font-size: 25px;
+    font-family: 'EB Garamond', serif;
+    color: #5a5cbe;
+
+}
+.home-passage{
+    margin-top: 10px;
+    font-size: 21px;
+    color: var(--secondary-text-color);
+    text-align: justify;
+}
+
+.home-right{
+    width: 60%;
+    padding-left: 10px;
+    justify-content: flex-end;
+}
+.home-right img{
+    width: 100%;
+    /* margin-top: 35px; */
+    align-items: flex-end;
+}
+.button{
+    margin-top: 50px;
+    gap: 40px;
+}
+.primary-button{
+    background-color: var(--primary-text-color);
+    border-radius: 8px;
+    font-size: 21.3px;
+    color: white !important;
+    padding: 12px 24px;
+    transition: 0.2s ease-out;
+  
+}
+.primary-button:hover{
+    box-shadow: 0 0 10px var(--primary-text-color);
+}
+
+.second-button{
+    border: 1.5px solid var(--primary-text-color);
+    border-radius: 8px;
+    font-size: 21.3px;
+    color: var(--primary-text-color) !important;
+    padding: 12px 24px;
+    transition: 0.2s ease-out;
+}
+.second-button:hover{
+    box-shadow: 0 0 10px var(--primary-text-color);
+}
+
+/* Department */
+.department{
+    margin-top: 80px;
+    text-align: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.heading{
+    font-size: 39.5px;
+    margin-bottom: 10px;
+    font-family: 'EB Garamond', serif;
+    color: var(--primary-text-color);
+}
+.features{
+    margin-top: 30px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.feature-card{
+    flex-direction: column;
+    gap: 20px;
+    width: 30%;
+    text-align: center;
+}
+
+.feature-card p{
+    text-align: justify;
+}
+
+.feature-card span{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
+    color: var(--primary-text-color);
+}
+.feature-card:nth-child(1) span{
+    font-size: 25px!important;
+}
+.last{
+    font-size: 23px!important;
+}
+.feature-card img{
+    width: 100%;
+}
+
+.feature-card:nth-last-child(2) img{
+    width: 90%;
+}
+
+/* About page */
+.about{
+    display: flex;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    gap: 40px;
+}
+/* .about-color{
+    background-color: #e0e7fd; 
+} */
+.about-left{
+    width: 50%;
+}
+.about-left img{
+    width: 100%;
+}
+
+.about-right{
+    width: 50%;
+    /* align-items: unset!important; */
+}
+.about-right-top{
+    font-size: 50px !important;
+    text-align: center !important;
+    font-family: 'Cormorant Garamond', serif;
+    color: var(--primary-text-color) !important;
+    /* text-align: center; */
+}
+.about-right p{
+    margin-top: 50px;
+    text-align: left;
+    font-size: 18px;
+    margin-bottom: 30px;
+    text-align: justify;
+    color: black;
+    font-family: 'Cormorant Garamond', serif;
+}
+.about-button{
+    text-align: center;
+    margin-top: 40px;
+}
+/* Sub Footer  */
+.footer{
+    background: #ebf2fa;
+    margin-top: 60px;
+    padding-block: 80px;
+}
+.footer-main{
+    justify-content: space-between;
+    align-items: unset;
+}
+.footer-logo{
+    margin-left: 50px;
+}
+.footer-logo a{
+    font-family: 'EB Garamond', serif;
+    color: var(--primary-text-color);
+    font-size: 35px;
+}
+.footer-right{
+    display: flex;
+    /* justify-content: space-evenly; */
+    gap: 120px;
+}
+.footer-links:nth-child(2){
+    margin-right: 80px;
+}
+.footer-links h3{
+    font-size: 25px;
+    color: var(--primary-text-color);
+    padding-bottom: 28px;
+}
+.footer-list{
+    padding-bottom: 28px;
+}
+.footer-items{
+    font-size: 20px;
+    color: var(--primary-text-color);
+}
+.footer-items span:hover{
+    text-decoration: underline;
+}
+
+/* Sub Footer */
+.sub-footer{
+    background-color: var(--primary-text-color);
+    color: white;
+    justify-content: space-between;
+    height: 40px;
+}
+.email{
+    margin-left: 80px;
+}
+.sub-footer-logo{
+    font-family: 'EB Garamond', serif;
+}
+.sub-footer a{
+    color: white;
+}
+.icons{
+    gap: 18px;
+    margin-right: 80px;
+}
