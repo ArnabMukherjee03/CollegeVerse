@@ -20,7 +20,7 @@ const app = express();
 
 
 app.set('view engine','ejs');
-app.set('views','../templates/views');
+app.set('views','templates/views');
 app.set("trust proxy", 1);
 
 // console.log(__dirname+'../../')
@@ -28,7 +28,7 @@ app.set("trust proxy", 1);
 
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(cors());
-app.use(express.static("../public"));
+app.use(express.static("public"));
 app.use(favicon(__dirname+'../../public/images/favicon.ico'))
 
 app.use(session({
