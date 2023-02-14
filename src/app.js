@@ -23,7 +23,7 @@ app.set('view engine','ejs');
 app.set('views','../templates/views');
 app.set("trust proxy", 1);
 
-console.log(__dirname+'../../')
+// console.log(__dirname+'../../')
 
 
 app.use(bodyParser.urlencoded({extended: false}));
