@@ -138,7 +138,7 @@ check('password').custom((password, { req }) => {
         const errors = validationResult(req);
         if(!errors.isEmpty()){
             const alert = errors.array()
-            res.render('Signup',{
+            res.render('signup',{
                 alert
             });
         }else{  
